@@ -9,17 +9,58 @@
 </head>
 <body>
     <header>
-        <h1>Weather Dashboard</h1></header>
-        <form>
-            <label for="city">City to Search</label>
-            <input type="text" id="city" name="city">
-            <button type="button" onclick="saveLocationData()">Submit</button>
-        </form>
-        <div>
-            <ul class="event" data-target="block">
-
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="main-container">
+    <div class="sidebar">
+            <h1 class="search">Search for a City:</h1>
+            <textarea id="city" placeholder="City Search"></textarea>
+        <button id="submit">Submit</button>
+        <div id="cityStorage">
+            <h1>Previous Searches</h1>
+            <ul>
+                <li></li>
             </ul>
         </div>
-    <script src="./assets/script.js"></script>
+    </div>
+        <div class="current-container">
+            <div id="citysearch"><p id="heading"></p></div>
+            <div class="days" id="current"><p></p></div>
+        </div>
+    </div>
+
+        <!--main cont-->
+            <div class="container">
+
+                <div class="days" id="day1"><p></p></div>
+
+                <div class="days" id="day2"><p></p></div>
+
+                <div class="days" id="day3"><p></p></div>
+
+                <div class="days" id="day4"><p></p></div>
+
+                <div class="days" id="day5"><p></p></div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+            
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./assets/script.js"></script>
 </body>
 </html>

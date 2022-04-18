@@ -1,7 +1,100 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 header {
+  font-size: 20px;
   text-align: center;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.days {
+  text-align: center;
+  padding: 35px;
+  font-size: 25px;
+}
+.container {
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 260px;
+}
+li {
+  list-style-type: none;
+  
+}
+.dynamic-p {
+  font-size: 30px;
+  font: bold;
+  text-align: center;
+  padding-top: 8px;
+  font-family:G 'Courier New', Courier, monospace;
+}
+.search {
+  padding: 10px;
+}
+#city {
+  height: 30px;
+  padding: 20px;
+  margin: 10px;
+}
+button {
+  height: 40px;
+  width: 160px;
+  margin: 10px;
+  
+}
+textarea {
+  resize: none;
+  font-size: 25px;
+  
+}
+.main-container {
+  display: flex;
+  background-color: lightcyan;
+  justify-content: space-between;
+
+}
+.current-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgb(173, 175, 175);
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+  flex-grow: 1;
+  height: 500px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 20%;
+  align-items: center;
+}
+.sidemenu {
+  /* width: 50%; */
+  background-color: aqua;
+}
+#cityStorage {
+  /* width: 50%; */
+  background-color: antiquewhite;
+  padding-top: 20px;
+}
+#current {
+  font-size: 25px;
+  align-items: center;
+}
+#citysearch {
+  padding-top: 30px;
+  font-size: 45px;
+  text-align: center;
+}
+.cityheader {
+  display: none;
+}
+#submit {
+  background-color: brown;
+  border-radius: 10px;
 }
